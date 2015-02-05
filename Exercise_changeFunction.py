@@ -5,9 +5,8 @@ from __future__ import division
 
 def get (dna):
     length = len(dna)
-    a = dna.count("A")
-    t = dna.count("T")
+    a = dna.upper().count("A")
+    t = dna.upper().count("T")
     at_proportion = (a + t)/length
-    return at_proportion
-
-
+# this is equal to "arrendondar", 3 will be the number of numbers after the comma
+    return round(at_proportion, 3)
